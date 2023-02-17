@@ -90,19 +90,22 @@ body {
 }
 
 .hero-button {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--accent-text-color);
     background-color: #4D5AE5;
+
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /* target-list-section */
@@ -192,38 +195,46 @@ body {
 
 /* ---------------------PORTFOLIO----------------------- */
 
-/* hero-section */
+/* portfolio-section */
 
 .btn-filter {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #4D5AE5;
+    background: var(--accent-bgc-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     color: var(--accent-text-color);
-    background: #404BBF;
+    background-color: #404BBF;
 }
 
-/* portfolio-section */
 
 .portfolio-subtitle {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--secondary-text-color)
 }
 
 .portfolio-description {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--main-text-color)
 }
