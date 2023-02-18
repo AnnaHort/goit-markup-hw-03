@@ -7,22 +7,44 @@ accent color -; color: #4D5AE5; color: #F4F4FD; color: #E7E9FC;
 /* background color
 main - background: #FFFFFF;
 secondary - background: #2E2F42;
+button color - background: #4D5AE5;
 accent - background: #F4F4FD;
+
 
 */
 :root {
     --main-bgc-color: #FFFFFF;
     --secondary-bgc-color: #2E2F42;
     --accent-bgc-color: #F4F4FD;
+    --button-bgc-color: #4D5AE5;
+    --btn-hover-bgc-color: #404BBF;
     --main-text-color: #434455;
     --secondary-text-color: #2E2F42;
     --accent-text-color: #FFFFFF;
+    --accent-text-color-light: #F4F4FD;
+    --secondary-accent-textcolor-light: #E7E9FC;
+    --secondary-accent-text-color: #4D5AE5;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-bgc-color);
-    color: #434455;
+    color: var(--main-text-color);
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list {
@@ -35,7 +57,7 @@ body {
 
 .list .link:hover,
 .list .link:focus {
-    color: #4D5AE5;
+    color: var(--secondary-accent-text-color);
 }
 
 /* header-nav */
@@ -48,11 +70,11 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--secondary-accent-text-color);
 }
 
 .logo-style {
-    color: #2E2F42;
+    color: var(--secondary-text-color);
 }
 
 
@@ -62,7 +84,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--secondary-text-color);
 }
 
 .address {
@@ -72,7 +94,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-text-color);
 }
 
 /* hero section */
@@ -86,7 +108,7 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--accent-text-color);
 }
 
 .hero-button {
@@ -98,7 +120,7 @@ body {
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--accent-text-color);
-    background-color: #4D5AE5;
+    background-color: var(--button-bgc-color);
     cursor: pointer;
 
 }
@@ -106,6 +128,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--btn-hover-bgc-color);
 
 }
 
@@ -183,7 +206,7 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color: var(--accent-text-color-light);
 }
 
 .footer-text {
@@ -191,7 +214,7 @@ body {
     font-size: 16px;
     line-height: 1.31;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--secondary-accent-textcolor-light);
 }
 
 /* ---------------------PORTFOLIO----------------------- */
@@ -204,9 +227,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--secondary-accent-text-color);
     background: var(--accent-bgc-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--secondary-accent-textcolor-light);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -219,7 +242,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--accent-text-color);
-    background-color: #404BBF;
+    background-color: var(--btn-hover-bgc-color);
 }
 
 
