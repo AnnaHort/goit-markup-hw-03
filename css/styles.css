@@ -292,7 +292,6 @@ button {
     background-color: var(--accent-bgc-color);
     padding-top: 120px;
     padding-bottom: 120px;
-
 }
 
 .subject {
@@ -311,6 +310,10 @@ button {
     text-align: center;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+.team-list {
+    background-color: var(--main-bgc-color);
 }
 
 .team-border {
@@ -340,9 +343,6 @@ button {
 /* footer */
 .footer {
     background-color: var(--secondary-bgc-color);
-}
-
-.footer-container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
